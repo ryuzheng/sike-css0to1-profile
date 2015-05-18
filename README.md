@@ -1,2 +1,3 @@
-# sike-css0to1-profile
-CSS 0 to 1 Profile
+# sike.io CSS 0 to 1 profile
+
+ - 5.18 Lesson 1
