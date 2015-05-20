@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-.info-section header h2:after {
+.info-section header h2:after { /* 划黑线 */
     margin: 10 auto;
     display: block;
     content: "";
@@ -144,4 +144,46 @@ h1, h2, h3, h4, h5, h6 {
 .info-section__description {
     font-style: italic;
     text-align: center;
+}
+
+.education-experience__list li { /* 足够的空间 */
+    padding-top: 40px;
+}
+.education-experience__list { /* 去除list风格 */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+    
+.education-experience__list img { /* 实现Float布局避免文字包围图片 */
+    width: 180px;
+    float: left;
+}
+
+.education-experience__list p {
+    overflow: hidden;
+}
+
+html {
+  box-sizing: border-box; /* 全局实现border-box */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.photos__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.photos__list img {
+    padding: 10px;
+    width: 100%;
+}
+
+.photos__list li {
+    float: left;
+    width: 25%;
 }
