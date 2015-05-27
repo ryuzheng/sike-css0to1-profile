@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .education-experience__list li { /* 足够的空间 */
-    padding-top: 40px;
+    padding: 20px;
 }
 .education-experience__list { /* 去除list风格 */
     list-style: none;
@@ -165,17 +165,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 html {
-  box-sizing: border-box; /* 全局实现border-box */
+    box-sizing: border-box; /* 全局实现border-box */
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 .photos__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    overflow: hidden;
 }
 
 .photos__list img {
@@ -186,4 +184,48 @@ html {
 .photos__list li {
     float: left;
     width: 25%;
+    text-align: center;
+}
+
+.get-in-touch__list{
+    overflow: hidden;
+}
+.get-in-touch__list li{
+    width:25%;
+    float: left;
+    text-align: center;
+}
+
+.contact input,
+.contact textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.contact button {
+    border: none;
+    border-radius: 9999px;
+
+    background: #ffd524;
+
+    cursor: pointer;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    color: #fff;
+    box-shadow: 0 3px 0 #daae1d;
+}
+
+.contact form{
+    width:40%;
+    margin:0 auto;
+    position: relative;
+}
+
+.contact form label{
+    position: absolute;
+    left: -105%;
+    width: 100%;
+    text-align: right;
 }
